@@ -8,7 +8,7 @@ const compiler = webpack(config)
 const devMiddleware = require('webpack-dev-middleware')(compiler,{
   publicPath: config.output.publicPath,
   stats: {
-    color: true,
+    colors: true,
     chunks: false
   }
 })
